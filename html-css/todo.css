@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #083335;
+
+}
+
+.contaner {
+    width: 450px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    display: grid;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 30px;
+
+    & #inp {
+        height: 35px;
+        width: 270px;
+        padding: 10px;
+        font-size: 13px;
+        border-radius: 5px;
+        text-transform: capitalize;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border: none;
+        background: rgba(240, 255, 255, 0.842);
+        margin-bottom: 20px;
+
+
+    }
+
+    & button {
+        width: 80px;
+        height: 30px;
+        font-size: 13px;
+        text-transform: capitalize;
+        background: #03314b;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-left: 10px;
+        outline: none;
+
+
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            /* opacity: 0.9; */
+            scale: 1.05;
+        }
+    }
+
+    & h1 {
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+}
+
+.text ul {
+    position: relative;
+    padding: 10px;
+    font-size: 15px;
+    text-transform: capitalize;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    /* border: none; */
+    background: rgba(14, 85, 85, 0.842);
+    margin-top: 5px;
+    text-align: left;
+    border-radius: 5px;
+    color: white;
+
+    &:hover {
+        border: 2px solid rgba(20, 80, 82, 0.623);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    & i {
+        position: absolute;
+        right: 10px;
+        cursor: pointer;
+    }
+
+}
+
+
+@media(width <=560px) {
+
+
+    .contaner {
+
+        padding: 10px;
+        width: 300px;
+
+
+        & #inp {
+            margin-bottom: 10px;
+            width: 200px;
+
+        }
+
+        & button {
+            width: 40px;
+        }
+    }
+
+
+}
+
+@media(width <=325px) {
+    .contaner {
+        margin: 0 10px;
+    }
+}
